@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script defer src="./assets/js/main.js"></script>
+    <title>Desafio 3 de JavaScript para la web</title>
+</head>
+<body class="body">
+    <nav class="navbar">
+        <a href="#section-1">Sección 1</a>
+        <a href="#section-2">Sección 2</a>
+        <a href="#section-3">Sección 3</a>
+    </nav>
+    <section class="seccion-web section-1" id="section-1">
+        <h2>Sección 1</h2>
+        <img src="./assets/imgs/imagen-parte-1.jpg" alt="Imagen con borde" class="card-imagen" id="imagen-1">
+
+    </section>
+    <section class="seccion-web section-2" id="section-2">
+        <h2>Sección 2</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./assets/imgs/imagen-parte-2-1.jpg" class="card-imagen">
+                <p class="card-text">Sticker 1</p>
+                <input type="number" id="input-num-1" class="text-input" placeholder="¿Cuántos quieres?">
+            </div>
+            <div class="card">
+                <img src="./assets/imgs/imagen-parte-2-2.jpg" class="card-imagen">
+                <p class="card-text">Sticker 2</p>
+                <input type="number" id="input-num-2" class="text-input" placeholder="¿Cuántos quieres?">
+            </div>
+            <div class="card">
+                <img src="./assets/imgs/imagen-parte-2-3.jpg" class="card-imagen">
+                <p class="card-text">Sticker 3</p>
+                <input type="number" id="input-num-3" class="text-input" placeholder="¿Cuántos quieres?">
+            </div>
+        </div>
+        <button class="btn-solicitar" id="btn-solicitar">Solicitar</button>
+        <p class="texto-resultado" id="texto-sticker"></p>
+    </section>
+    <section class="seccion-web section-3" id="section-3">
+        <h2>Sección 3</h2> 
+        <div class="selector-container">
+            <select class="selector text-input" id="selector-1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select class="selector text-input" id="selector-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select class="selector text-input" id="selector-3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button class="btn-solicitar" id="btn-ingresar">Ingresar</button>
+        <p class="texto-resultado" id="texto-password"></p>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --color1:#A6AEBF;
+    --color2:#C5D3E8;
+    --color3:#D0E8C5;
+    --color4:#FFF8DE;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color3);
+}
+
+h2{
+    background-color: var(--color1);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: navbar;
+    gap: 1rem;
+}
+
+.section-1{
+    grid-area: section-1;
+}
+.section-2{
+    grid-area: section-2;
+}
+.section-3{
+    grid-area: section-3;
+}
+
+.seccion-web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    background-color: var(--color1);
+    padding: 3rem;
+}
+
+.card-imagen{
+    width: 250px;
+    border-radius: 5px;
+    border: rgba(255, 255, 255, 255) 2px solid;
+}
+
+.borde-rojo{
+    border: red 2px solid;
+}
+
+
+.texto-resultado{
+    height: 2rem;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-weight: bolder;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--color1);
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+.text-input{
+    text-align: center;
+    height: 2rem;
+    width: 15rem;
+    background-color: var(--color4);
+}
+
+.btn-solicitar{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 5px;
+    background-color: var(--color2);
+}
+
+.mensaje-error{
+    color: red;
+}
+
+.selector-container{
+    background-color: var(--color1);
+}
+
+.selector{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 5px;
+    
+}
+
+.body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh auto auto auto;
+    grid-template-areas: 
+    "navbar"
+    "section-1"
+    "section-2"
+    "section-3";
+}
+
+@media (width >= 1780px) {
+    .body{
+        grid-template-rows: 10vh 75vh 75vh 60vh;
+    }
+
+    .card-imagen{
+        width: 500px;
+    }
+}
