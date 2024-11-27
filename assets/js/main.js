@@ -28,7 +28,7 @@ btnSolicitar.addEventListener('click', function(){
 });
 
 textoSticker.addEventListener('click', function(){
-    textoSticker.innerHTML="";
+    this.innerHTML = "";
 });
 
 /*Logica Desafio 3*/
@@ -45,5 +45,5 @@ btnIngresar.addEventListener('click', function(){
 });
 
 textoPassword.addEventListener('click', function(){
-    textoPassword.innerHTML="";
+    this.innerHTML = "";
 });
